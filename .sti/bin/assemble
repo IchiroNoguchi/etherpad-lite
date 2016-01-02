@@ -4,6 +4,7 @@ APP_ROOT=/home/node
 SRC=/tmp/src
 
 mkdir -p $APP_ROOT
+chmod og+rx $APP_ROOT
 cp -a $SRC/* $APP_ROOT/
 cd $APP_ROOT
 sh bin/installDeps.sh
