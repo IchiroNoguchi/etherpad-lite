@@ -1,10 +1,9 @@
 #!/bin/bash
 
-yum -y install epel-release
-yum -y install nodejs npm
+APP_ROOT=/home/node
 
-mkdir -p /opt/eplite
-cp -a ./* /opt/eplite/
-cd /opt/eplite
+mkdir -p $APP_ROOT
+cp -a ./* $APP_ROOT/
+cd $APP_ROOT
 sh bin/installDeps.sh
 cp -f settings.json.template settings.json
