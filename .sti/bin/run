@@ -1,4 +1,5 @@
 #!/bin/bash
 
 APP_ROOT=/home/node
-/usr/bin/node $APP_ROOT/node_modules/ep_etherpad-lite/node/server.js
+cd $APP_ROOT
+/usr/bin/node node_modules/ep_etherpad-lite/node/server.js
