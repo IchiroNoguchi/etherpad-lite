@@ -1,9 +1,10 @@
 #!/bin/bash
 
 APP_ROOT=/home/node
+SRC=/tmp/sti
 
 mkdir -p $APP_ROOT
-cp -a ./* $APP_ROOT/
+cp -a $SRC/* $APP_ROOT/
 cd $APP_ROOT
 sh bin/installDeps.sh
 cp -f settings.json.template settings.json
