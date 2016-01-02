@@ -1,7 +1,7 @@
 #!/bin/bash
 
 APP_ROOT=/home/node
-SRC=/tmp
+SRC=/tmp/src
 
 mkdir -p $APP_ROOT
 cp -a $SRC/* $APP_ROOT/
