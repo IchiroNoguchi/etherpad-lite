@@ -3,10 +3,9 @@
 APP_ROOT=/home/node
 SRC=/tmp/src
 
-mkdir -p $APP_ROOT/var
 cp -a $SRC/* $APP_ROOT/
 cd $APP_ROOT
 sh bin/installDeps.sh
 cp -f settings.json.template settings.json
 chmod og+rwx $APP_ROOT
-chmod og+rwx $APP_ROOT/var
+chmod -R og+w $APP_ROOT
