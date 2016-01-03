@@ -2,4 +2,5 @@
 
 APP_ROOT=/home/node
 cd $APP_ROOT
+sed "s/__MYSQL-HOST__/${MYSQL_SERVICE_HOST}/" settings.json.mysql > settings.json
 /usr/bin/node node_modules/ep_etherpad-lite/node/server.js

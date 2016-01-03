@@ -6,6 +6,5 @@ SRC=/tmp/src
 cp -a $SRC/* $APP_ROOT/
 cd $APP_ROOT
 sh bin/installDeps.sh
-cp -f settings.json.template settings.json
 chmod og+rwx $APP_ROOT
 chmod -R og+w $APP_ROOT
